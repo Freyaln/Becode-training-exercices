@@ -1,0 +1,83 @@
+body {
+    padding: 50px;
+    background:url('../images/abstract.jpg') center/cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+  }  
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @media  screen and (min-width: 800px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+  }
+  .user{
+    opacity: 0.8;
+    @media  screen and (min-width: 800px){
+      width: 20%;
+    }
+    
+    
+  }
+  section{
+    width: 70%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    @media  screen and (min-width: 800px){
+      margin-top: 35vh;
+      transform: translateY(-35%);
+    }
+    
+   }
+  h1{
+    text-align: center;
+    //color: grey;
+    //color: pink;
+    font-size: 4vw;
+  }
+  form{
+    width: 100%;
+  }
+.input{
+  margin: 10px;
+}
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+.button{
+  font-family: 'Roboto Slab', serif;
+  color: hsl(44, 100%, 77%) !important;
+  border-radius: 30em;
+  &:hover{
+    color: white !important;
+  }
+}
+.link{
+  text-decoration: none;
+  text-align: right;
+  color: black;
+  &:hover{
+    color: hsl(44, 100%, 77%);
+  }
+}
+.logout{
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+
+  

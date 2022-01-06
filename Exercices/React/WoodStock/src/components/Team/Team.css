@@ -1,0 +1,137 @@
+.team-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 47rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1D1818;
+}
+
+.team-flex .team-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.team-flex .team-left #img-team {
+  background-image: url("../../img/team.png");
+  background-repeat: no-repeat;
+  height: 47rem;
+  width: 24rem;
+}
+
+.team-flex .team-left #img-bg {
+  background-color: rgba(188, 154, 68, 0.55);
+  height: 47rem;
+  width: 24rem;
+  margin-left: -24rem;
+}
+
+.team-flex .team-left #team {
+  background-color: #FFFFFF;
+  width: 25rem;
+  height: 3.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  font-family: 'Raleway', sans-serif;
+  margin-left: -9rem;
+  margin-top: 7rem;
+  padding-top: 0.5rem;
+}
+
+.team-flex .team-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 20%;
+}
+
+.team-flex .team-right #mind {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  margin-left: -10rem;
+  margin-top: 5rem;
+}
+
+.team-flex .team-right p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.12rem;
+  color: #FFFFFF;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+  margin-left: -9rem;
+}
+
+.team-flex .team-right .buttons-1-2 {
+  font-family: 'Raleway', sans-serif;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #1D1818;
+  border: 0.15rem solid #BC9A44;
+  margin-left: -7rem;
+  margin-top: 3rem;
+  color: #FFFFFF;
+}
+
+.team-flex .team-right .buttons-1-2-line {
+  height: 0.12rem;
+  width: 8rem;
+  background-color: #FFFFFF;
+  margin-left: -0.8rem;
+  margin-top: 4.2rem;
+}
+
+.team-flex #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 6.5rem;
+  -webkit-transform: translate(22rem, -21rem);
+          transform: translate(22rem, -21rem);
+}
+
+.team-flex #logo #wood2 {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+}
+
+.team-flex #logo #wood2 span {
+  -webkit-text-decoration: line-through #BC9A44;
+          text-decoration: line-through #BC9A44;
+  text-decoration-thickness: 0.3rem;
+}

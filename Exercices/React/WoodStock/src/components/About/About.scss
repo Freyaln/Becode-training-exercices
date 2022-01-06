@@ -1,0 +1,67 @@
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    height: 37rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    .block-chair {
+        background-color: rgba(188, 154, 68, 0.4);
+        height: 25rem;
+        width: 18rem;
+    }
+
+    #img-chair {
+        height: 25rem;
+        width: 18rem;
+        background-image: url('../../img/chair.png');
+        margin-left: -13rem;
+        margin-top: 5rem;
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 25%;
+        margin-left: 17rem;
+
+        #verti-block {
+            height: 3rem;
+            width: 0.5rem;
+            background-color: rgba(188, 154, 68, 0.4);
+            margin-right: 1rem;
+        }
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+            font-weight:500;
+
+        }
+
+        p {
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.12rem;
+            color: #827E7E;
+            padding-bottom: 3rem;
+        }
+
+        .buttons-1-2 {
+            font-family: 'Raleway', sans-serif;
+            height: 2.5rem;
+            width: 10rem;
+            background-color: #FFFFFF;
+            border: 0.15rem solid #BC9A44;
+            margin-left: -2rem;
+        }
+
+        .buttons-1-2-line {
+            height: 0.12rem;
+            width: 8rem;
+            background-color: #000000;
+            margin-left: -0.8rem;
+        }
+    }
+}

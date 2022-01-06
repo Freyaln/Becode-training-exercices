@@ -1,0 +1,122 @@
+#footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: gainsboro;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+#footer a {
+  color: white;
+}
+#footer article#footer1 {
+  width: 20%;
+  text-align: center;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 700px) and (max-width: 850px) {
+  #footer article#footer1 {
+    width: 21%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 699px) {
+  #footer article#footer1 {
+    width: 100%;
+  }
+}
+#footer article#footer1 img {
+  padding-top: 1rem;
+  height: 10rem;
+  width: 10rem;
+}
+@media screen and (min-width: 300px) {
+  #footer article#empty {
+    width: 0%;
+  }
+}
+@media screen and (min-width: 700px) {
+  #footer article#empty {
+    width: 1%;
+  }
+}
+@media screen and (min-width: 850px) {
+  #footer article#empty {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #footer article#empty {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #footer article#empty {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 300px) {
+  #footer article#footer2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  #footer article#footer2 {
+    width: 39%;
+  }
+}
+@media screen and (min-width: 850px) {
+  #footer article#footer2 {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #footer article#footer2 {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #footer article#footer2 {
+    width: 25%;
+  }
+}
+#footer article#footer2 h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+@media screen and (min-width: 300px) {
+  #footer article#footer3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 700px) {
+  #footer article#footer3 {
+    width: 39%;
+  }
+}
+@media screen and (min-width: 850px) {
+  #footer article#footer3 {
+    width: 35%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #footer article#footer3 {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #footer article#footer3 {
+    width: 25%;
+  }
+}
+#footer article#footer3 h2 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+<<<<<<< HEAD
+}
+=======
+}/*# sourceMappingURL=footer.css.map */
+>>>>>>> development

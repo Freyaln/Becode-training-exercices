@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://salukimakingcode.github.io/pack/pack.css" rel="stylesheet" />
+    <script src="https://salukimakingcode.github.io/pack/pack.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Freyling Aurélien's portfolio contact page">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <nav>
+                <ul class="navbar-flex">
+                    <li><button class="btn-link">
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </button>
+                    </li>
+                    <li><button class="btn-link">
+                            <a href="about.html">
+                                About Me
+                            </a>
+                        </button>
+                    </li>
+                    <li><button class="btn-link">
+                            <a href="projects.html">
+                                Projects
+                            </a>
+                        </button>
+                    </li>
+                    <li><button class="btn-link">
+                            <a href="contact.html">
+                                Contacts
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <div class="container-flex">
+            <div class="box">
+                <article class="header">
+                    <div class="fold">
+                        <h1 class="title">
+                            A simple mail is all it takes...
+                        </h1>
+                    </div>
+                </article>
+                <article class="mail-sent">
+                    <h2>Your message has been sent. <br>
+                        I will contact you soon.</h2>
+                </article>
+                <article class="contact-container">
+                    <h2 class="title">
+                        Contact :
+                    </h2>
+                    <div class="line"></div>
+                </article>
+                <div class="form-container">
+                    <h2 class="title-L">Contact :</h2>
+                    <div class="line-L"></div>
+                    <form action="" method="post" id="form">
+                        <input type="text" class="texts form" id="company" name="company" placeholder="Company name"
+                            required>
+                        <span class="popup-box" id="companyWrong">Don't be shy, tell me who you work for.</span>
+                        <input type="text" class="texts form" id="email" name="email" placeholder="Email address"
+                            required>
+                        <span class="popup-box" id="emailWrong">Enter a correct email please.</span>
+                        <input type="text" class="texts-small form" id="firstname" name="firstname"
+                            placeholder="Firstname" required>
+                        <span class="popup-box" id="firstnameWrong">Enter your firstname please.</span>
+                        <input type="text" class="texts-small form" id="lastname" name="lastname" placeholder="Lastname"
+                            required>
+                        <span class="popup-box" id="lastnameWrong">Enter your lastname please.</span>
+                        <select name="gender" class="texts-small form" id="gender" required>
+                            <option value="Other" id="otherGender">Other</option>
+                            <option value="Ms" id="madam">Ms</option>
+                            <option value="Mr" id="mister">Mr</option>
+                        </select>
+                        <span class="popup-box" id="genderWrong">Do I call you Ms or Mr ?</span>
+                        <select name="subject" class="subject" id="subject" required>
+                            <option value="Other" id="otherSubject">Other</option>
+                            <option value="Job" id="job">Job</option>
+                            <option value="Internship" id="internship">Internship</option>
+                        </select>
+                        <span class="popup-box" id="subjectWrong">I need to know why you are contacting me.</span>
+                        <textarea name="message" class="texts-message form" id="message" cols="30" rows="10"
+                            placeholder="Type your message here" required></textarea>
+                        <span class="popup-box" id="messageWrong">20 characters minimum please.</span>
+                        <input type="submit" class="submit form" id="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <a href="https://www.linkedin.com/in/aur%C3%A9lien-freyling-04456112a/" target="_blank"><img
+                    src="./assets/img/logos/linkedin-BW.png" alt=""></a>
+            <a href="https://github.com/Freyaln" target="_blank"><img src="./assets/img/logos/github.png" alt=""></a>
+            <a href="https://steamcommunity.com/id/Abs0lut69/" target="_blank"><img src="./assets/img/logos/steam.png"
+                    alt=""></a>
+        </div>
+    </footer>
+    <script src="./assets/js/contact.js"></script>
+</body>
+
+</html>

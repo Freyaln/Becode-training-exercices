@@ -1,0 +1,114 @@
+.form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 37rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+.form-flex h3 {
+  font-family: 'Raleway', sans-serif;
+  margin-left: -50rem;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.form-flex #form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+  height: 25rem;
+}
+
+.form-flex #form .inputs {
+  border: 1px solid #BCB5B5;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  height: 1.5rem;
+  width: 17rem;
+}
+
+.form-flex #form .inputs::-webkit-input-placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+}
+
+.form-flex #form .inputs:-ms-input-placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+}
+
+.form-flex #form .inputs::-ms-input-placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+}
+
+.form-flex #form .inputs::placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+}
+
+.form-flex #form #email {
+  width: 25rem;
+}
+
+.form-flex #form #message {
+  border: 1px solid #BCB5B5;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  height: 10rem;
+  width: 36.3rem;
+}
+
+.form-flex #form #message::-webkit-input-placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-flex #form #message:-ms-input-placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-flex #form #message::-ms-input-placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-flex #form #message::placeholder {
+  color: #D3C08E;
+  letter-spacing: 0.1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+}

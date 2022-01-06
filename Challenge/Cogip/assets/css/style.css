@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap");
+a {
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.main-container {
+  height: auto;
+}
+
+.main-container section h1 {
+  font-family: 'M PLUS 1 Code', sans-serif;
+  margin-top: 10vh;
+  font-size: 3rem;
+}
+
+.main-container article {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'M PLUS 1 Code', sans-serif;
+  margin-top: 5vh;
+  font-size: 1.2rem;
+}
+
+.invoicesTable {
+  width: 75%;
+  height: auto;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.footer {
+  margin-top: 5vh;
+}
+
+.footer #footer-text {
+  font-family: 'M PLUS 1 Code', sans-serif;
+  font-size: 1rem;
+}
+
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.form {
+  background-color: #d7d7d7;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.is-link {
+  background-color: #00D1B2 !important;
+  color: white !important;
+  font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.is-link:hover {
+  border: 1px solid #00D1B2 !important;
+  background-color: #d9d9d9 !important;
+  color: #00D1B2 !important;
+}
+
+.link li {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.link a {
+  color: black !important;
+}
+
+.link a:hover {
+  color: #00D1B2 !important;
+}

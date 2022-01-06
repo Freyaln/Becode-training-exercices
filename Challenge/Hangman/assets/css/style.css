@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 5vh;
+  background-color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerContainer .gameName {
+  color: white;
+  margin-left: 2%;
+  width: 50%;
+}
+
+.headerContainer .lang {
+  color: white;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.headerContainer .lang ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.headerContainer .lang li {
+  padding-right: 2em;
+}
+
+.headerContainer .lang li a {
+  text-decoration: none;
+  color: white;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: auto;
+  font-size: 2em;
+  padding-top: 25vh;
+  border: 2px solid black;
+  z-index: 10;
+}
+
+.mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: slategrey;
+}
+
+.mainContainer .game {
+  width: 70%;
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer .game {
+    width: 100%;
+  }
+}
+
+.mainContainer .game h2 {
+  height: 5vh;
+  text-align: center;
+  background-color: slategrey;
+}
+
+.mainContainer .game #words {
+  height: 5vh;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 8px 12px 9px 5px rgba(0, 0, 0, 0);
+          box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 8px 12px 9px 5px rgba(0, 0, 0, 0);
+  background-color: white;
+}
+
+.mainContainer .gallows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  min-height: 10vh;
+  max-height: 80vh;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer .gallows {
+    width: 100%;
+  }
+}
+
+.mainContainer .gallows img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer .gallows img {
+    padding-top: 18vh;
+  }
+}
+
+.mainContainer .gallows .scores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 17%;
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer .gallows .scores {
+    width: 25%;
+  }
+}
+
+.mainContainer .gallows .scores #chancesLeft {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 5px;
+  background-color: slategrey;
+}
+
+.mainContainer .gallows .scores #lettersFound {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 5px;
+  background-color: slategrey;
+}
+
+.mainContainer .gallows .scores #lettersToFind {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 5px;
+  background-color: slategrey;
+}
+
+.mainContainer .letters {
+  width: 70%;
+  height: auto;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainContainer .letters .letter {
+  border-radius: 10%;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 8px 12px 9px 5px rgba(0, 0, 0, 0);
+          box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 8px 12px 9px 5px rgba(0, 0, 0, 0);
+}
+
+.mainContainer .letters #a, .mainContainer .letters #b, .mainContainer .letters #c, .mainContainer .letters #d, .mainContainer .letters #e, .mainContainer .letters #f, .mainContainer .letters #g, .mainContainer .letters #h, .mainContainer .letters #i, .mainContainer .letters #j, .mainContainer .letters #k, .mainContainer .letters #l, .mainContainer .letters #m, .mainContainer .letters #n, .mainContainer .letters #o, .mainContainer .letters #p, .mainContainer .letters #q, .mainContainer .letters #r, .mainContainer .letters #s, .mainContainer .letters #t, .mainContainer .letters #u, .mainContainer .letters #v, .mainContainer .letters #w, .mainContainer .letters #x, .mainContainer .letters #y, .mainContainer .letters #z {
+  width: 48px;
+  height: 48px;
+  margin: 0.5em 0.5em 0.2em 0;
+}
+
+@media screen and (max-width: 700px) {
+  .mainContainer .letters {
+    width: 100%;
+  }
+  .mainContainer .letters #a, .mainContainer .letters #b, .mainContainer .letters #c, .mainContainer .letters #d, .mainContainer .letters #e, .mainContainer .letters #f, .mainContainer .letters #g, .mainContainer .letters #h, .mainContainer .letters #i, .mainContainer .letters #j, .mainContainer .letters #k, .mainContainer .letters #l, .mainContainer .letters #m, .mainContainer .letters #n, .mainContainer .letters #o, .mainContainer .letters #p, .mainContainer .letters #q, .mainContainer .letters #r, .mainContainer .letters #s, .mainContainer .letters #t, .mainContainer .letters #u, .mainContainer .letters #v, .mainContainer .letters #w, .mainContainer .letters #x, .mainContainer .letters #y, .mainContainer .letters #z {
+    width: 38px;
+    height: 38px;
+    margin: 0.5em 0.5em 0.2em 0;
+  }
+}
+
+#alert {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#alert #alert-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 100px;
+  padding: 1rem;
+  border: 10px solid #888;
+  width: 60%;
+}
+
+#alert #alert-content #alertText {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+#alert #alert-content #alertClose {
+  text-align: center;
+  margin: 2rem;
+}
+
+#alert #alert-content #alertClose #alertCloseButton {
+  background-color: #BBBBBB;
+  padding: 0.8rem;
+  border-radius: 10%;
+  border: solid 1px black;
+  cursor: pointer;
+}
+
+#alert #alert-content #alertRenew {
+  text-align: center;
+  margin: 2rem;
+}
+
+#alert #alert-content #alertRenew #newGame {
+  background-color: #BBBBBB;
+  padding: 0.8rem;
+  border-radius: 10%;
+  border: solid 1px black;
+  cursor: pointer;
+}

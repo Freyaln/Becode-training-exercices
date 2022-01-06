@@ -1,0 +1,94 @@
+body {
+    max-width: 90%;
+    margin-left: 12.5%;
+    background: -webkit-linear-gradient(29deg, rgb(22, 155, 237), rgb(51, 90, 20));
+    background: linear-gradient(29deg, rgb(22, 155, 237), rgb(51, 90, 20));
+    background-image: url(https://www.ppt-backgrounds.net/thumbs/real-farm-frame-templates.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+q {
+    font-style: italic;
+}
+
+a {
+    font-weight: bolder;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+a:visited {
+    color: green;
+}
+
+blockquote {
+    width: 50%;
+    margin: 80px 20% 80px 20%;
+    font-size: 160%;
+    font-style: italic;
+    background-color: rgb(155, 150, 150);
+    border-left: 3px solid;
+    border-color: firebrick;
+    padding: 0 0 0 30px;
+}
+
+.good {
+    text-transform: capitalize;
+    color: green;
+    background-color:rgb(155, 150, 150, 0.0)
+}
+
+.bad {
+    text-transform: capitalize;
+    color: red;
+    background-color:rgb(155, 150, 150, 0.0)
+}
+
+h1:first-child {
+    background-color: yellow;
+}
+
+.white {
+    background-color: white;
+}
+
+.grey {
+    background-color: grey;
+}
+
+li {
+    margin: 10px 0 10px 0;
+}
+
+#bien {
+    background: url(/bien.png) no-repeat 315px;
+    height: 50px;
+}
+
+#mal {
+    background: url(/mal.png) no-repeat 315px;
+    height: 50px;
+}
+
+#chat {
+    background: url(/chat.png) no-repeat 315px;
+    height: 50px;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: rgb(37, 3, 3);
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}

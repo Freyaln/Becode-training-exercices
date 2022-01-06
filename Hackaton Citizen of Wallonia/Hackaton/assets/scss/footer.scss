@@ -1,0 +1,66 @@
+#footer {
+  color:white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: gainsboro;
+  width:100%;
+  margin:0 auto;
+  margin-top: 1rem;
+
+  & a {
+    color:white;
+  }
+  & article {
+    &#footer1 {
+      @media screen and (min-width: 700px) and (max-width: 850px)  {width:21%;}
+      @media screen and (min-width: 300px) and (max-width: 699px) {width:100%;}
+
+      width:20%;
+      text-align: center;
+      padding-top: 1rem;
+      & img {
+        padding-top: 1rem;
+        height:10rem;
+        width:10rem;
+      }
+    }
+    &#empty{
+      @media screen and (min-width: 300px) {width:0%;}
+      @media screen and (min-width: 700px) {width:1%;}
+      @media screen and (min-width: 850px) {width:10%;}
+      @media screen and (min-width: 1000px) {width:20%;}
+      @media screen and (min-width: 1300px) {width:30%;}
+    }
+    &#footer2 {
+      @media screen and (min-width: 300px) {width:100%;text-align: center;}
+      @media screen and (min-width: 700px) {width:39%;}
+      @media screen and (min-width: 850px) {width:35%;}
+      @media screen and (min-width: 1000px) {width:30%;}
+      @media screen and (min-width: 1300px) {width:25%;}
+      & h2 {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+    }
+    &#footer3 {
+      @media screen and (min-width: 300px) {width:100%;text-align: center;}
+      @media screen and (min-width: 700px) {width:39%;}
+      @media screen and (min-width: 850px) {width:35%;}
+      @media screen and (min-width: 1000px) {width:30%;}
+      @media screen and (min-width: 1300px) {width:25%;}
+      & h2 {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      // & #lastlink {
+      //   padding-bottom: 1rem;
+      // }
+    }
+  }
+  // & #space {
+  //   height:0.3rem;
+  //   width:100%;
+  //   background-color: white;
+  // }
+}

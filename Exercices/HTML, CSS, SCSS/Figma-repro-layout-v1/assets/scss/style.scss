@@ -1,0 +1,417 @@
+@import 'library';
+
+$background-white: #FFFFFF;
+$background-pinkish: #F78065;
+$textcolor-pinkish:#F78065;
+$textcolor-lightgrey: rgb(153, 145, 145);
+$textcolor-medgrey: rgb(112, 107, 107);
+$textcolor-white:#FFFFFF;
+$bordercolor-lightgrey: rgb(153, 145, 145);
+
+
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: $background-white;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+
+    & .position {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        & .menu {
+            position: absolute;
+            top: 2vh;
+            right: 2vw;
+            width: 17vw;
+            height: auto;
+            
+            > button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                line-height: 0;
+                border-radius: 15px;
+                border: 1px $bordercolor-lightgrey solid;
+                font-size: 0;
+
+                > .arrow {
+                    margin: 0;
+                    padding: 0 2px 0 0;
+                    width: 8px;
+                    height: 8px;
+                }
+
+                > .user {
+                    margin: 0;
+                    padding: 0;
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+
+        }
+    }
+
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    & .main-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        background-color: $background-white;
+
+        > h1 {
+            width: 48%;
+            font-size: em(12);
+            text-align: justify;
+            margin-right: 1vw;
+            border-spacing: 1vw;
+
+            > mark {
+                background-color: transparent;
+                color: $textcolor-pinkish;
+            }
+        }
+
+        > p {
+            width: 48%;
+            font-size: em(8);
+            text-align: justify;
+            padding-left: 2vw;
+            border-left: 1px black groove;
+        }
+
+        > .explore {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 5vh;
+            background-color: $background-pinkish;
+            border: none;
+            color: $textcolor-white;
+
+            > img {
+                width: 12.5px;
+                height: 12px;
+                padding-right: 2vw;
+            }
+        }
+    }
+
+    & .services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+    
+        & .services-img {
+            width: 124px;
+            height: 90px;
+            margin-left: 3vw;
+            }
+    
+        & .services-img-ma-l {
+            width: 124px;
+            height: 90px;
+            margin-left: 6vw;
+            }
+    
+        > .wrapper {
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+    
+                > h2 {
+                    width: 70%;
+                    font-size: em(12);
+                    margin: 5vh 0 1vh 10vw;
+                }
+        
+                > .grey-text {
+                    width: 70%;
+                    font-size: em(8);
+                    color: $textcolor-medgrey;
+                    margin: 0 0 1vh 10vw;
+                }
+        
+                > .pink-text {
+                    width: 70%;
+                    font-size: em(10);
+                    color: $textcolor-pinkish;
+                    margin: 0 0 1vh 10vw;
+                }
+    
+        }
+    
+    }
+
+    & .facility {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2vh;
+
+        > h2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 5vh;
+            font-size: em(14);
+            margin: 5vh 0 1vh 0;
+            text-align: center;
+            background-color: $background-pinkish;
+        }
+
+        & .img-facility{
+            width: 16px;
+            height: 16px;
+            margin-top: 1.6vh;
+            margin-left: 3vw;
+            padding: 0;
+            }
+
+        > .col-left-top {
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 50%;
+
+            > h2 {
+                width: 80%;
+                font-size: em(12);
+                text-align: center;
+
+                
+            }
+
+            > .grey-text {
+                width: 70%;
+                font-size: em(8);
+                color: $textcolor-medgrey;
+                margin: 0 0 1vh 10vw;
+            }
+
+            > .pink-text {
+                width: 70%;
+                font-size: em(10);
+                color: $textcolor-pinkish;
+                margin: 0 0 1vh 10vw;
+            }
+     
+        }
+
+        & .img-facility{
+            width: 16px;
+            height: 16px;
+            margin-top: 1.6vh;
+            margin-left: 3vw;
+            padding: 0;
+            }
+
+        > .col-right-top {
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 50%;
+
+            > h2 {
+                width: 80%;
+                font-size: em(12);
+                text-align: center;
+            }
+
+            > .grey-text {
+                width: 70%;
+                font-size: em(8);
+                color: $textcolor-medgrey;
+                margin: 0 0 1vh 10vw;
+            }
+
+            > .pink-text {
+                width: 70%;
+                font-size: em(10);
+                color: $textcolor-pinkish;
+                margin: 0 0 1vh 10vw;
+            }
+     
+        }
+
+        & .img-facility {
+            width: 16px;
+            height: 16px;
+            margin-top: 1.6vh;
+            margin-left: 3vw;
+            padding: 0;
+            }
+
+        > .col-left-bot {
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 50%;
+
+            > h2 {
+                width: 80%;
+                font-size: em(12);
+                text-align: center;
+            }
+
+            > .grey-text {
+                width: 70%;
+                font-size: em(8);
+                color: $textcolor-medgrey;
+                margin: 0 0 1vh 10vw;
+            }
+
+            > .pink-text {
+                width: 70%;
+                font-size: em(10);
+                color: $textcolor-pinkish;
+                margin: 0 0 1vh 10vw;
+            }
+     
+        }
+
+        & .img-facility {
+            width: 16px;
+            height: 16px;
+            margin-top: 1.6vh;
+            margin-left: 3vw;
+            padding: 0;
+            }
+
+        > .col-right-bot {
+    
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 50%;
+            margin-top: -2vh;
+
+            > h2 {
+                width: 80%;
+                font-size: em(12);
+                text-align: center;
+            }
+
+            > .grey-text {
+                width: 70%;
+                font-size: em(8);
+                color: $textcolor-medgrey;
+                margin: 0 0 1vh 10vw;
+            }
+
+            > .pink-text {
+                width: 70%;
+                font-size: em(10);
+                color: $textcolor-pinkish;
+                margin: 0 0 1vh 10vw;
+            }
+     
+        }
+    }
+
+    & .header-van {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 5vh;
+        width: 100%;
+        background-color: $background-white;
+
+        > h2 {
+            width: 46%;
+            font-size: em(12);
+            text-align: justify;
+            margin: 0 1vw 0 1vw;
+        }
+
+        > p {
+            width: 46%;
+            font-size: em(8);
+            text-align: justify;
+            padding-left: 2vw;
+            border-left: 1px black groove;
+        }
+
+        > .start {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 5vh;
+            margin-top: 1vh;
+            background-color: $background-pinkish;
+            border: none;
+            color: $textcolor-white;
+
+            > img {
+                width: 12.5px;
+                height: 12px;
+                padding-right: 2vw;
+            }
+        }
+
+        & .picture-left {
+            display: flex;
+            flex-direction: column;
+            width: 33.33%;
+            height: auto;
+
+            > img {
+                width: 165px;
+                height: auto;
+            }
+        }
+    }
+
+}

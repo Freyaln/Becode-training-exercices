@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The contact page of Pizzataro">
+    <meta name="keywords" content="Pizzataro, Contact">
+    <meta name="author" content="Asuna Semoulin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/contact-style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- https://www.pinterest.fr/pin/631207704011176975/ -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <section class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                Pizzataro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <section class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pictures.html">Pictures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./restaurant.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+    <form>
+        <section class="container mt-3">
+            <section class="row mt-3">
+                <section class="col-12 col-xl-6">
+                    <label for="inputFirstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputFirstName" aria-describedby="firstNameHelp">
+                </section>
+                <section class="col-12 col-xl-6">
+                    <label for="inputLastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputLastName" aria-describedby="lastNameHelp">
+                </section>
+            </section>
+            <section class="row mt-3">
+                <section class="col-12">
+                    <label for="inputEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                </section>
+            </section>
+            <section class="row mt-3">
+                <section class="col-12">
+                    <label for="selectSubjectOfTheMessage" class="form-label">Subject of the message</label>
+                    <select id="selectSubjectOfTheMessage" class="form-select">
+                      <option>Commercial</option>
+                      <option>Personnal</option>
+                      <option>Informations</option>
+                    </select>
+                </section>
+            </section>
+            <section clas="row mt-3">
+                <section class="col-12">
+                    <section class="form-group mt-3">
+                        <label for="message">Message</label>
+                        <textarea class="form-control mt-3" id="message"></textarea>
+                    </section>
+                </section>
+            </section>
+            <section class="row mt-3">
+                <section class="col-12">
+                    <button type="submit" class="btn btn-primary mt-3" id="submitButton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>Submit</button>
+                </section>
+            </section>
+        </section>
+    </form>
+
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: red;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#small {
+    color: black;
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+}
+
+#small h1,
+#medium h1,
+#large h1 {
+    font-size: 5.4vw;
+}
+
+#small p,
+#medium p,
+#large p {
+    font-size: 2.4vw;
+}
+
+#medium {
+    color: black;
+    background-color: burlywood;
+    width: 100%;
+    height: auto;
+}
+
+#large {
+    color: black;
+    background-color: chartreuse;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 301px) and (max-width: 767px) {
+    body {
+        background-color: green;
+    }
+
+    #small {
+        width: 66.66%;
+    }
+
+    #medium {
+        width: 33.33%;
+    }
+
+    #large {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: blue;
+    }
+
+    #small {
+        width: 33.33%;
+    }
+
+    #medium {
+        width: 33.33%;
+    }
+
+    #large {
+        width: 33.33%;
+    }
+}

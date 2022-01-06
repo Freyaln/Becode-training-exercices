@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="./assets/js/pack.js"></script>
+    <script src="./assets/js/include.js"></script>
+    <link href="./assets/css/footer.css" rel="stylesheet" />
+    <script src="./assets/js/header.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link href="./assets/css/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/demandeTransport.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="ICI DESCRIPTION DE LA PAGE" />
+    <title>Balance ton Trajet - Offrir un transport</title>
+</head>
+
+<body>
+<header id="header"></header>
+
+<main>
+    <h1>Offrir un transport</h1>
+    <p>Indiqué votre/vos prochain(s) trajet(s) ou vos trajets quotidiens afin de proposer votre solution de co-voiturage.
+    </p>
+    <article class="container">
+        <div class="field">
+            <div class="width">
+                <label class="label">Nom de famille</label>
+                <div class="control">
+                    <input class="input" id="familyName" type="text" placeholder="Nom de famille">
+                </div>
+            </div>
+            <div class="width">
+                <label class="label">Prénom</label>
+                <div class="control">
+                    <input class="input" id="firstName" type="text" placeholder="Prénom">
+                </div>
+            </div>
+            <div class="width">
+                <label class="label">Nombre de personne</label>
+                <div class="control">
+                    <input class="input" id="personCount" type="number" placeholder="Nombre de personne">
+                </div>
+            </div>
+            <div class="width">
+                <label class="label">Lieu de départ</label>
+                <div class="control">
+                    <input class="input" id="departZone" type="text" placeholder="Lieu de départ">
+                </div>
+            </div>
+        </div>
+        <div class="field2">
+            <div class="width">
+                <label class="label">Lieu d'arrivée</label>
+                <div class="control">
+                    <input class="input" id="targetZone" type="text" placeholder="Lieu d'arrivée">
+                </div>
+            </div>
+            <div class="width">
+                <label class="label">Date de départ</label>
+                <div class="control">
+                    <input class="input" id="travelDate" type="date" placeholder="Date de départ">
+                </div>
+            </div>
+            <div class="width">
+                <label class="label">Heure souhaitée</label>
+                <div class="control">
+                    <input class="input" id="travelTime" type="text" placeholder="Heure souhaitée">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label class="label">Commentaires</label>
+                <textarea class="textarea" placeholder="Entrez ici vos commentaires..." rows="10"></textarea>
+            </div>
+        </div>
+        <div class="submitCont">
+            <button class="submit">Envoyer</button>
+        </div>
+    </article>
+</main>
+
+<footer id="footer"></footer>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+body {
+  margin: auto;
+  background-repeat: no-repeat;
+  background-image: url(../img/repas13.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+li > a {
+  font-size: 16px;
+  padding: 20px;
+  color: black;
+}
+
+nav {
+  margin-bottom: 200px;
+}
+
+footer {
+  margin-bottom: 0;
+  margin-top: 1000px;
+}
+
+.lorem {
+  margin-top: 350px;
+  height: auto;
+}
+
+.lorem p {
+  font-size: 18px;
+  color: #f1eee8;
+  padding: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lorem h1 {
+  color: papayawhip;
+  font-weight: bold;
+  font-family: "Merienda", cursive;
+}
+
+h4 {
+  color: papayawhip;
+  font-weight: bold;
+  font-family: "Merienda", cursive;
+}
+
+main {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */

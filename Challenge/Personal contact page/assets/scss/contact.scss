@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=Yuji+Syuku&display=swap');
+
+$navcolor : rgba(255,255,255,1);
+$headcolorop : rgba(255,255,255,0.50); 
+$orange : rgb(247,189,84);
+
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    height:2.091rem;
+    background-color: $navcolor;
+    @media screen and (min-width: 1001px) {
+        height: 3.5rem;
+    }
+    
+    nav {
+
+
+        .navbar-flex {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            padding-top: 0.250rem;
+            width: 100%;
+            background-color: $orange;
+
+            @media screen and (min-width: 1001px) {
+                height: 3.5rem;
+                padding-top: 0;
+                background-color: $navcolor;
+            }
+
+            li {
+
+                .btn-link {
+                    background-color: $orange;
+                    border: none;
+                    
+                    @media screen and (min-width: 1001px) {
+                        background-color: $navcolor;
+                    }
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 0.875rem;
+                    font-family: 'Genos', sans-serif;
+
+                    @media screen and (min-width: 1001px) {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+.container-flex {
+
+    
+
+    @media screen and (min-width: 1001px) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        background-color: $orange;
+    }
+
+    .box {
+
+        
+        @media screen and (min-width: 1001px) {
+            display: flex;
+            flex-direction: row;    
+            height: 60vh;
+            width: 80%;
+            box-shadow: 2px 2px 15px 9px rgba(214,214,214,0.85);
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+    
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 15rem;
+            margin-top: 0.5rem;
+            background-image: url("../img/test.png");
+            background-size: cover;
+
+            @media screen and (min-width: 1001px) {
+                width: 50%;
+                height: 20rem;
+            }
+
+            .fold {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                height: 10vh;
+                background-color: $headcolorop;
+
+                .title {
+                    font-size: 1.3rem;
+                    font-family: 'Genos', sans-serif;
+                    text-align: center;
+                    padding: 0 0.5rem 0 0.5rem;
+                }
+            }
+
+        }
+
+        .mail-sent {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-family: 'Genos', sans-serif;
+
+            @media screen and(min-width: 1001px) {
+                align-items: center;
+            }
+
+        }
+        .contact-container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+
+            @media screen and(min-width: 1001px) {
+                align-items: center;
+            }
+
+            .title {
+                font-size: 1.3rem;
+                font-family: 'Genos', sans-serif;
+                padding-left: 1rem;
+                @media screen and(min-width: 1001px) {
+                    display: none;
+                }
+            }
+            .line {
+                border-bottom: 1px solid $orange;
+                width: 85%;
+                margin-left: 1rem;
+
+                @media screen and(min-width: 1001px) {
+                    display: none;
+                }
+            }
+        }
+        .form-container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            height: 25.2rem;
+            width: 100%;
+
+            @media screen and(min-width: 1001px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                width: 50%;
+                
+            }
+            .title-L {
+                display: none;
+                
+                @media screen and(min-width: 1001px) {
+                    font-size: 1.3rem;
+                    font-family: 'Genos', sans-serif;
+                    padding-left: 1rem;
+                    display: block;
+                }
+            }
+            .line-L {
+                
+                @media screen and(min-width: 1001px) {
+                    border-bottom: 1px solid $orange;
+                    width: 40%;
+                    margin-left: 1rem;
+                    display: block;
+                }
+            }
+
+            #form {
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                .popup-box {
+
+                    display: none;
+                    width: 50%;
+                    background-color: #a09898;
+                    color: white;
+                    text-align: center;
+                    z-index: 10;
+                    margin-left: 5rem;
+                    margin-top: 0.5rem;
+                    animation: appear 1s;
+
+                        @media screen and(min-width: 1001px) {
+                        display: none;
+                        width: 50%;
+                        background-color: #a09898;
+                        color: white;
+                        text-align: center;
+                        z-index: 10;
+                        margin-left: 7rem;
+                        margin-top: 0.5rem;
+                        animation: appear 1s;
+                        }
+                }
+
+                input[type=text] {
+                    border: none;
+                    border-bottom: 0.5px solid $orange;
+    
+                }
+
+                select {
+                    border: none;
+                    border-bottom: 0.5px solid $orange;
+    
+                }
+
+                textarea {
+                        border: 0.5px solid $orange;
+        
+                }
+
+                .texts {
+                    font-size: 1.3rem;
+                    font-family: 'Genos', sans-serif;
+                    margin: 0.5rem 1rem 0 1rem;
+                    width: 85%;
+                    height: 1.5rem;
+                }
+                .texts-small {
+                    font-size: 1rem;
+                    font-family: 'Genos', sans-serif;
+                    margin: 0.5rem 1rem 0 1rem;
+                    width: 20.5%;
+                    height: 1.5rem;
+
+                    @media screen and(min-width: 400px) {
+                        width: 24.5%;
+                    }
+                }
+                .subject {
+                    font-size: 1.3rem;
+                    font-family: 'Genos', sans-serif;
+                    margin: 0.5rem 1rem 0 1rem;
+                    width: 87%;
+                    height: 1.7rem;
+
+                    @media screen and(min-width: 653px) {
+                        width: 86.2%;
+                    }
+
+                    option {
+                        width: 50%;
+                    }
+                }
+                .texts-message {
+                    font-size: 1.3rem;
+                    font-family: 'Genos', sans-serif;
+                    margin: 0.5rem 1rem 0 1rem;
+                    width: 85.8%;
+                    height: 7rem;
+
+                    @media screen and(min-width: 601px) {
+                        height: 11rem;
+                    }
+
+                }
+                .submit {
+                    font-size: 1.3rem;
+                    font-family: 'Genos', sans-serif;
+                    margin: 0.5rem 1rem 0 1rem;
+                    width: 87%;
+                    height: 2rem;
+                    background-color: $orange;
+                    border: none;
+
+                    @media screen and(min-width: 653px) {
+                        width: 86.5%;
+                        
+                    }
+                }
+                }
+            }
+   }   }
+
+.footer-container {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $orange;
+    margin-top: 1rem;
+    height: 3.5rem;
+
+    @media screen and(min-width: 1001px) {
+        margin-top: 0;
+        background-color: $navcolor;
+
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

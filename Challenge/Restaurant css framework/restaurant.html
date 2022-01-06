@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+      <!--ICONS-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     
+      <!--map-->
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+      <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
+      
+      <!-- font -->
+      <!--  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> --> 
+      <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="./assets/css/restaurant.css">
+      
+      <title>restaurant</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="./assets/img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">Pizzataro
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Welcome</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./pictures.html">Pictures</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./restaurant.html">Restaurant</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+  
+  <body>
+    <div class="container p-5">
+        <div class="row h-100 justify-content-center align-items-center">
+          <div class="col"><img src="assets/img/resto.jpg" class="img-fluid" alt="photo"></div>
+          <div class="col"><h1 class="display-3">For a convivial moment</h1>    
+          <p class="lead">
+            With friends or family, around a good table or a catering service with the flavors of Italy;
+            think of the Pizzataro where Giovanni and you will welcome with pleasure!
+          </p>
+        </div>
+    </div>
+
+    <div class="container p-5">
+        <div class="row">
+          <div class="col">
+              <h2>Schedules</h2>
+              <dl class="row">
+                <dt class="col-sm-3">Monday</dt>
+                <dd class="col-sm-9">12:00 - 14:30 et 18:30 - 22:00</dd>
+                <dt class="col-sm-3">Tuesday</dt>
+                <dd class="col-sm-9">12:00 - 14:30 et 18:30 - 22:00.</dd>
+                <dt class="col-sm-3">Wednesday</dt>
+                <dd class="col-sm-9">Fermé</dd>
+                <dt class="col-sm-3">Thursday </dt>
+                <dd class="col-sm-9">12:00 - 14:30 et 18:30 - 22:00.</dd>
+                <dt class="col-sm-3">Friday</dt>
+                <dd class="col-sm-9">12:00 - 14:30 et 18:30 - 22:30</dd>
+                <dt class="col-sm-3">Saturady</dt>
+                <dd class="col-sm-9">12:00 - 14:30 et 18:30 - 22:00.</dd>
+                <dt class="col-sm-3">Sunday</dt>
+                <dd class="col-sm-9">12:00 - 14:30 et 18:30 - 22:00.</dd>
+              </dl>
+          </div>
+         
+            <div class="col">
+              <h2>Coordinates</h2>           
+              <ul class="list-group">
+                <li class="list-group-item"><i class="bi bi-geo-alt-fill pe-2"></i>Il Pizzataro - rue de Mons</li>
+                <li class="list-group-item"><i class="bi bi-envelope pe-2"></i>Pizzataro@hotmail.com</li>
+                <li class="list-group-item"><i class="bi bi-telephone-fill pe-2"></i>02/444.33.66</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    
+    <script>
+    // TO MAKE THE MAP APPEAR YOU MUST
+    // ADD YOUR ACCESS TOKEN 
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYmFkeXciLCJhIjoiY2t0OXc2ZXd3MWdlMzJ4bGFuYWgyMzhmZSJ9.ArFGj9coUp_hMEFCJD_snA';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/streets-v11', // style URL
+        center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+    });
+    </script>
+  </body>
+</html>

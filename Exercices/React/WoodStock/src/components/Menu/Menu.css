@@ -1,0 +1,30 @@
+.navbar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5rem;
+  gap: 7rem;
+  list-style: none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.navbar .menu #wood {
+  font-size: 1.4rem;
+  letter-spacing: 0.5rem;
+}
+
+.navbar .menu #wood span {
+  -webkit-text-decoration: line-through #BC9A44;
+          text-decoration: line-through #BC9A44;
+  text-decoration-thickness: 0.3rem;
+}

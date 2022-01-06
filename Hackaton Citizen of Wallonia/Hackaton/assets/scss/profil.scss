@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+////////////variables/////////////////
+$backgroundColor: rgb(255, 255, 255);
+$lightGreen : #94c78e;
+$lightBlue : #b9e1f5;
+$greenColor : #4f9849;
+$blueColor: #012c71;
+$fontFamily: 'Roboto', sans-serif;
+$h1: 100%;
+$h2: 2rem;
+$h3: 1.50rem;
+$text: 1rem; 
+$button: 1px solid $greenColor;
+$radius : 0 25px 25px 0;
+
+////////////////////////////////////
+body{
+    font-family: $fontFamily;
+}
+
+.profil{
+    text-align: center;
+}
+.user{
+    padding-left: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+    background-color: gainsboro;
+    border-radius: $radius;
+    width: 80%;
+.textUser{
+    padding-left: 15px;
+}
+    h1{
+        color: $lightGreen;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3rem;
+    }
+    img{
+        width: 55px;
+        border-radius: 50px;
+        background-color: white;
+    }
+}

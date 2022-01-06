@@ -1,0 +1,122 @@
+body {
+  padding: 50px;
+  background: url("../images/abstract.jpg") center/cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Slab', serif;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.user {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 800px) {
+  .user {
+    width: 20%;
+  }
+}
+
+section {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 800px) {
+  section {
+    margin-top: 35vh;
+    -webkit-transform: translateY(-35%);
+            transform: translateY(-35%);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 4vw;
+}
+
+form {
+  width: 100%;
+}
+
+.input {
+  margin: 10px;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.button {
+  font-family: 'Roboto Slab', serif;
+  color: #ffe08a !important;
+  border-radius: 30em;
+}
+
+.button:hover {
+  color: white !important;
+}
+
+.link {
+  text-decoration: none;
+  text-align: right;
+  color: black;
+}
+
+.link:hover {
+  color: #ffe08a;
+}
+
+.logout {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+}

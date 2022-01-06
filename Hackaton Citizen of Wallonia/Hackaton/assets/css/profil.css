@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.profil {
+  text-align: center;
+}
+
+.user {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  background-color: gainsboro;
+  border-radius: 0 25px 25px 0;
+  width: 80%;
+}
+.user .textUser {
+  padding-left: 15px;
+}
+.user h1 {
+  color: #94c78e;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.user img {
+  width: 55px;
+  border-radius: 50px;
+  background-color: white;
+<<<<<<< HEAD
+}
+=======
+}/*# sourceMappingURL=profil.css.map */
+>>>>>>> development

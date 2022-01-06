@@ -1,0 +1,108 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: rgb(255,177,0);
+background: linear-gradient(18deg, rgba(255,177,0,1) 0%, rgba(180,127,28,1) 32%, rgba(0,212,255,1) 100%);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 10vw repeat(3, 1fr);
+    grid-template-rows: 20vh 20vh 20vh 30vh;
+    grid-template-areas: 
+            "name name name name"
+            ". photo quote quote"
+            ". photo . ."
+            ". photo desc desc";
+}
+
+.name {
+    grid-area: name;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.profile-pic {
+    grid-area: photo;
+    width: 100%;
+    max-height: 100%;
+}
+
+.quote {
+    grid-area: quote;
+    text-align: center;
+    justify-self: left;
+    align-self: center;
+    background-color: rgba(190, 182, 182, 0.7);
+    border-left: 3px orange solid;
+    font-size: 1em;
+}
+
+.description {
+    grid-area: desc;
+    text-align: center;
+    justify-self: left;
+    align-self: center;
+    font-size: 1em;
+    padding-left: 1vw;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 10vw repeat(4, 1fr) 10vw;
+    grid-template-rows: 10vh 10vh 10vh 40vh;
+    grid-template-areas: 
+    ". table table hobbies whatfor ."
+    ". table table hobbies whatfor ."
+    ". table table hobbies whatfor ."
+    ". . . story story .";
+}
+
+.table, th, td {
+    border: 1px #000000 solid;
+}
+
+.table, th {
+    font-size: 1em;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    grid-area: table;
+    text-align: center;
+    font-size: 1em;
+}
+
+.hobbies {
+    grid-area: hobbies;
+}
+
+.hobbies, ul, li {
+    font-size: 1em;
+}
+
+.hobbies > h4 {
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.whatfor {
+    grid-area: whatfor;
+}
+
+.whatfor > h4 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.story {
+    grid-area: story;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.footer {
+    text-align: center;
+}

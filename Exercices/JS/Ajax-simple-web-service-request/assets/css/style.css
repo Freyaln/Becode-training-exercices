@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #00f9f6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00f9f6), color-stop(80%, #0e4a54)) no-repeat;
+  background: linear-gradient(180deg, #00f9f6 0%, #0e4a54 80%) no-repeat;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.container .header {
+  width: 100%;
+  height: auto;
+}
+
+.container .header .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .header .titleContainer .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+  margin-top: 3vh;
+  font-family: "Birthstone", cursive;
+  border: 2px dotted white;
+  padding: 0.625em;
+}
+
+.container .header .titleContainer .line {
+  margin-right: 5%;
+  margin-top: 3vh;
+}
+
+.container .header .titleContainer .line #photo {
+  height: auto;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.container .main {
+  width: 100%;
+  height: 60vh;
+}
+
+.container .main .quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10%;
+}
+
+.container .main .quotes #quote {
+  width: 100%;
+  text-align: center;
+  font-family: "Birthstone", cursive;
+  font-size: 1.875em;
+  color: #FFFFFF;
+}
+
+.container .main .quotes #permalink {
+  text-decoration: none;
+  font-family: "Birthstone", cursive;
+  color: #FFFFFF;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer .fromContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10%;
+  border-top: 1px solid black;
+}
+
+.footer .fromContainer h2 {
+  font-family: "Birthstone", cursive;
+}

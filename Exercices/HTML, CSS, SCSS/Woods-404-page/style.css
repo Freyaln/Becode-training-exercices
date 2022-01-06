@@ -1,0 +1,67 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(127, 255, 212, 0.5);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.main img {
+    transform: scale(0.5);
+}
+
+.main p {
+    font-size: 2em;
+    margin-top: -5vh;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.footer button {
+    width: 25vw;
+    height: 10vh;
+    background-color: none;
+    border: 2px rgba(127, 255, 212, 0.5) solid;
+    transition-duration: 2s;
+}
+
+.footer button:hover {
+    transform: rotateY(180deg);
+}
+
+.footer a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 2em;
+    font-family: 'Teko', sans-serif;;
+}
+

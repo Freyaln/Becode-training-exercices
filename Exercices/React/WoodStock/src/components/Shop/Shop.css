@@ -1,0 +1,84 @@
+.shop-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 37rem;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shop-flex .block-restaurant {
+  background-color: rgba(188, 154, 68, 0.4);
+  height: 20rem;
+  width: 32rem;
+}
+
+.shop-flex #img-restaurant {
+  height: 20rem;
+  width: 32rem;
+  background-image: url("../../img/wood-restaurant.png");
+  margin-right: -30rem;
+  margin-top: 3rem;
+  z-index: 10;
+}
+
+.shop-flex .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 25%;
+  margin-right: 17rem;
+}
+
+.shop-flex .shop #verti-block-shop {
+  height: 3rem;
+  width: 0.5rem;
+  background-color: rgba(188, 154, 68, 0.4);
+  margin-right: 1rem;
+}
+
+.shop-flex .shop h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.shop-flex .shop p {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.12rem;
+  color: #827E7E;
+  padding-bottom: 3rem;
+}
+
+.shop-flex .shop .buttons-1-2 {
+  font-family: 'Raleway', sans-serif;
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #FFFFFF;
+  border: 0.15rem solid #BC9A44;
+  margin-left: -2rem;
+}
+
+.shop-flex .shop .buttons-1-2-line {
+  height: 0.12rem;
+  width: 8rem;
+  background-color: #000000;
+  margin-left: -0.8rem;
+}

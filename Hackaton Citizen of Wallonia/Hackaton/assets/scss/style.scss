@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import 'contact';
+////////////variables/////////////////
+$backgroundColor: rgb(255, 255, 255);
+$lightGreen : #94c78e;
+$lightBlue : #b9e1f5;
+$greenColor : #4f9849;
+$blueColor: #012c71;
+$fontFamily: 'Roboto', sans-serif;
+$h1: 100%;
+$h2: 2rem;
+$h3: 1.50rem;
+$text: 1rem; 
+$button: 1px solid $greenColor;
+$radius : 25px 25px 0 0;
+
+////////////////////////////////////
+body{
+    // padding: 0;
+    // margin: 0 auto;
+    font-family: $fontFamily;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background-image: url('https://www.froidchapelle.be/banner/dscf5714.jpg/@@images/f89394f5-0fbe-4d61-9a0a-cb4694c8ac26.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    & h1{
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 800;
+        span {
+            background-color: rgba(255, 255, 255,.5);
+            filter: drop-shadow(5px 6px 5px rgba(0, 0, 0, 0.6));
+            padding: 3%;
+            border-radius: 10px;
+        }
+    }
+    .backgroundMain{
+        background-size: cover;
+        color: rgb(80, 79, 79);
+    }
+}
+.whoWeAre{ 
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+    gap: 1rem;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    @media screen and(min-width: 700px){ 
+        margin: 0 auto;
+        display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    justify-content: center;
+	    align-items: stretch;
+	    align-content: stretch;
+        width: 80%;
+    }
+    .flexArticle{
+        display: flex;
+        margin: 40px 20px 0 20px;
+        text-align: center;
+        background-color: gainsboro;
+        @media screen and(max-width: 1024px){ 
+          flex-flow: column;
+        }
+
+        h3{
+            color: $blueColor;
+            font-size: $h3;
+        }
+        transform: translate(0, -1rem);
+        div {
+            width: 40%;
+            margin: .5% 3% 0% 3%;
+            h2 {
+                margin-bottom: 3%;
+                font-weight: 600;
+            }
+
+            @media screen and(max-width: 1024px){ 
+              width: 80%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+        }
+    
+        
+        p{
+            color: grey;
+            font-size: $text;
+            text-align: center;
+        }
+    }
+    
+}
+ 
+/**
+* Display of soon transports 
+*/
+.departure {
+  margin: auto;
+  font-size: 1.5em;
+  padding: 20px;
+
+  section {
+    margin: 10px;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &--time {
+    width: 40%;
+  }
+
+  &--place {
+    width: 40%;
+  }
+
+  &--car, &--bus, &--train {
+    display: flex;
+    flex-flow: row wrap;
+
+    h3 {
+      color: $blueColor;
+      font-weight: bold;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1201px){
+
+    width: 80%;
+    margin-top: 175px;
+
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;      
+    }
+
+    &--time {
+        width: 20%;
+    }
+
+    &--place {
+        width: 50%;
+    }
+
+    &--car, &--bus, &--train {
+
+      display: flex;
+      flex-flow: row wrap;
+      width: 33%;   
+
+      h3 {
+        width: 100%;
+      }   
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px){
+    width: 80%;
+    margin-top: 175px;
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: column nowrap;    
+      width: 100%;  
+    }
+
+    &--time {
+      width: 40%;
+    }
+
+    &--place {
+      width: 40%;
+    }
+
+    &--car, &--bus, &--train {
+
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+
+      h3 {
+        width: 100%;
+      }   
+    }
+  }
+}

@@ -1,0 +1,96 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+
+    .center {
+        font-family: 'Merienda', cursive;
+        text-align: center;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    .btn {
+        font-size: 1.5em;
+
+        mark {
+            opacity: 0.5;
+        }
+
+    }
+
+    #dropdownMenuButton1 {
+        background-image: url(/assets/img/repas/bolo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton2 {
+        background-image: url(/assets/img/repas/shrimp.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh; 
+    }
+    #dropdownMenuButton3 {
+        background-image: url(/assets/img/repas/carbo.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh; 
+    }
+    #dropdownMenuButton4 {
+        background-image: url(/assets/img/repas/green.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton5 {
+        background-image: url(/assets/img/repas/raviolis.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton6 {
+        background-image: url(/assets/img/repas/courgette.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton7 {
+        background-image: url(/assets/img/repas/peppers.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton8 {
+        background-image: url(/assets/img/repas/meatpasta.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton9 {
+        background-image: url(/assets/img/repas/duck.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+    #dropdownMenuButton10 {
+        background-image: url(/assets/img/repas/salmon.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 25vh;
+    }
+
+}
+

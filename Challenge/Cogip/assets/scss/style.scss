@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap');
+
+a {
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+.main-container {
+    height: auto;
+
+    section {
+
+        h1 {
+            font-family: 'M PLUS 1 Code', sans-serif;
+            margin-top: 10vh;
+            font-size: 3rem;
+        }
+    }
+
+    article {
+        flex-direction: column;
+        font-family: 'M PLUS 1 Code', sans-serif;
+        margin-top: 5vh;
+        font-size: 1.2rem;
+    }
+}
+
+.invoicesTable {
+    width: 75%;
+    height: auto;
+    font-family: 'M PLUS 1 Code', sans-serif;
+
+}
+.footer {
+
+    margin-top: 5vh;
+
+    #footer-text {
+        font-family: 'M PLUS 1 Code', sans-serif;
+                font-size: 1rem;
+    }
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    
+}
+.form{
+    background-color: #d7d7d7;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.is-link{
+    background-color: #00D1B2 !important;
+    color: white !important;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    &:hover{
+        border: 1px solid #00D1B2 !important;
+        background-color: #d9d9d9 !important;
+        color :#00D1B2 !important;
+    }
+}
+.link{
+
+    li{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        align-content: space-between;
+    }
+    a{  
+        color:black !important;
+        &:hover{
+            color: #00D1B2 !important;
+        }
+    }
+}

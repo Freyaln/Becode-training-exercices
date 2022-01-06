@@ -1,0 +1,21 @@
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    height: 12rem;
+    width: 100%;
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+            color: #FFFFFF;
+            font-size: 5rem;
+            letter-spacing: 2rem;
+
+            span {
+                text-decoration:line-through #BC9A44;  
+                text-decoration-thickness: 0.5rem;
+            }
+        }
+}

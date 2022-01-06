@@ -1,0 +1,121 @@
+// import
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+
+//functions
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
+// Variables
+$bgColorMain : rgb(0,249,246);
+$bgGradientMain : linear-gradient(180deg, rgba(0,249,246,1) 0%, rgba(14,74,84,1) 80%);
+$fontTitle : 'Birthstone', cursive;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: $bgColorMain;
+    background: $bgGradientMain no-repeat;
+}
+
+// Skel of the site
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    // header
+
+    .header {
+        width: 100%;
+        height: auto;
+
+        .titleContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .infos {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-left: 5%;
+                margin-top: 3vh;
+                font-family: $fontTitle;
+                border: 2px dotted white;
+                padding: em(10);
+            }
+
+            .line {
+                margin-right: 5%;
+                margin-top: 3vh;
+            
+            #photo {
+                height: auto;
+                width: 150px;
+                border-radius: 50%;
+                border: 2px solid black;
+            }
+        }
+        }
+    }
+
+    .main {
+        width: 100%;
+        height: 60vh;
+
+        .quotes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10%;
+
+            #quote{
+                width: 100%;
+                text-align: center;
+                font-family: $fontTitle;
+                font-size: em(30);
+                color: #FFFFFF
+            }
+
+            #permalink {
+                text-decoration: none;
+                font-family: $fontTitle;
+                color: #FFFFFF
+            }
+        }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+
+        .fromContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10%;
+            border-top: 1px solid black;
+
+            h2{
+                font-family: $fontTitle;
+            }
+        }
+    }
+
+
+
+

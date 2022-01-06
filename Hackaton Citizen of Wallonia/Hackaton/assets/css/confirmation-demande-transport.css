@@ -1,0 +1,19 @@
+#confirmation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 58.9vh;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#confirmation h1 {
+  font-size: 3rem;
+}
+#confirmation p {
+  font-size: 1.5rem;
+<<<<<<< HEAD
+}
+=======
+}/*# sourceMappingURL=confirmation-demande-transport.css.map */
+>>>>>>> development

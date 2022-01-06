@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="New gameHangman, come and test your deduction's skills and try to save this poor soul.">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <title>Hangman game</title>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <article class="gameName">
+            <h1>Hangman game</h1>
+        </article>
+        <nav class="lang">
+            <ul>
+                <li><a href="index.html">FR</a></li>
+                <li><a href="indexEN.html" id="lang" data-lang="en">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainContainer">
+        <article class="game">
+            <h2>Will you save this poor soul ?</h2>
+            <h3 id="words"></h3>
+        </article>
+
+        <section class="gallows">
+            <figure>
+                <img src="./assets/img/9.svg" alt="Pendu" id="imgSrc">
+            </figure>
+            <div class="scores">
+                <h3 id="chancesLeft"></h3>
+                <h3 id="lettersFound"></h3>
+                <h3 id="lettersToFind"></h3>
+            </div>
+        </section>
+        <section class="letters">
+            <button class="letter" id="a" data-letter="a">A</button>
+            <button class="letter" id="z" data-letter="z">Z</button>
+            <button class="letter" id="e" data-letter="e">E</button>
+            <button class="letter" id="r" data-letter="r">R</button>
+            <button class="letter" id="t" data-letter="t">T</button>
+            <button class="letter" id="y" data-letter="y">Y</button>
+            <button class="letter" id="u" data-letter="u">U</button>
+            <button class="letter" id="i" data-letter="i">I</button>
+            <button class="letter" id="o" data-letter="o">O</button>
+            <button class="letter" id="p" data-letter="p">P</button>
+            <button class="letter" id="q" data-letter="q">Q</button>
+            <button class="letter" id="s" data-letter="s">S</button>
+            <button class="letter" id="d" data-letter="d">D</button>
+            <button class="letter" id="f" data-letter="f">F</button>
+            <button class="letter" id="g" data-letter="g">G</button>
+            <button class="letter" id="h" data-letter="h">H</button>
+            <button class="letter" id="j" data-letter="j">J</button>
+            <button class="letter" id="k" data-letter="k">K</button>
+            <button class="letter" id="l" data-letter="l">L</button>
+            <button class="letter" id="m" data-letter="m">M</button>
+            <button class="letter" id="w" data-letter="w">W</button>
+            <button class="letter" id="x" data-letter="x">X</button>
+            <button class="letter" id="c" data-letter="c">C</button>
+            <button class="letter" id="v" data-letter="v">V</button>
+            <button class="letter" id="b" data-letter="b">B</button>
+            <button class="letter" id="n" data-letter="n">N</button>
+        </section>
+    </main>
+    <section id="alert" class="animate__animated animate__backInDown">
+        <div id="alert-content">
+            <p id="alertText"></p>
+            <p id="alertClose"><span id="alertCloseButton">OK</span></p>
+            <p id="alertRenew"><span id="newGame">New game</span></p>
+        </div>
+    </section>
+
+    <script src="./assets/js/words-FR.js"></script>
+    <script src="./assets/js/words-EN.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

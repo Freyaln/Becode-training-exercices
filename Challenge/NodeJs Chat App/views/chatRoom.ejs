@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="chatRoomMain">
+    <section class="box user">
+        <p>blabla</p>
+    </section>
+    <section class="box">
+    <div class="container p-5">
+        <ul id="messages"></ul>
+        <form id="form" action="">
+            <p>
+                <%= name %>
+            </p>
+            <textarea class="textarea is-warning" name="message" id="input" autocomplete="off" rows="3"></textarea>
+            
+            <!-- <input type="text" id="input" autocomplete="off" name="message" /> -->
+            <button class="input button is-warning is-outlined">Send</button>
+        </form>
+        <div class="buttons">
+            <a class="link" href="/logout">
+            Log out
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/socket.js"></script>
+    </main>
+</body>
+
+</html>
